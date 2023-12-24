@@ -7,7 +7,8 @@ import win32api, win32con
 
 # Botão de Rerun
 # X:  922 Y:  997 RGB: (166, 211,  57)
-# X:  947 Y:  995 RGB: (203, 240, 103)
+# X:  947 Y:  995 RGB: (203, 240, 103)]
+# X:  730 Y:  984 RGB: (203, 240,  96)
 
 # Botão de X de mensagem
 # X: 1376 Y:  216 RGB: (201,  44,  45)
@@ -21,7 +22,7 @@ def click(x,y):
     
 while keyboard.is_pressed('q') == False:
     #Verificando pixel para clicar
-    if pyautogui.pixel(922,997)[1] == 211 or pyautogui.pixel(922,997)[1] == 240:
+    if pyautogui.pixel(730,984)[1] == 211 or pyautogui.pixel(730,984)[1] == 240:
         #Clicando
-        time.sleep(0.01)
-        click(922,997)
+        time.sleep(1)
+        click(730,984)
